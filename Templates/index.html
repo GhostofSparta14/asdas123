@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block title %}Ana Sayfa{% endblock %}
+{% block content %}
+<h1 class="text-center mb-4">Hoş geldiniz, {{ session.user }}!</h1>
+<p class="text-center">Soru sormanız yeterli!</p>
+<div class="text-center mt-3">
+    <a href="/about" class="btn btn-primary me-2">Hakkında</a>
+    <a href="/ask" class="btn btn-success">Soru Sor</a>
+</div>
+{% endblock %}
